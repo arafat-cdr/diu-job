@@ -1,0 +1,72 @@
+1) users:
+	1) id
+	2) first_name
+	3) last_name
+	4) mobile_number
+	5) email
+	6) image
+	7) account_type(worker,client,admin)
+	8) location_id
+	9) category_id
+	10) created_at
+	11) updated_at
+    12) deleted_at
+
+2) categories:
+	1) id
+	2) name
+	3) created_at
+	4) updated_at
+	5) deleted_at
+
+3) skil_lists
+	1) id
+	3) category_id
+	2) name
+	3) created_at
+	4) updated_at
+	5) deleted_at
+
+4) user_skills
+	1) id
+	2) user_id
+	3) skil_list_id
+	4) created_at
+	5) updated_at
+	6) deleted_at
+
+5) locations
+	1) id
+	2) name
+	3) created_at
+	4) updated_at
+	5) deleted_at
+
+6) job_posts
+	1) id
+	2) title
+	3) description
+	4) Price
+	5) user_id
+	6) created_at
+	7) updated_at
+	8) deleted_at
+
+7) ratings
+	1) id
+	2) rating_number
+	3) user_id
+	4) client_id
+	5) job_post_id
+	6) created_at
+	7) updated_at
+	8) deleted_at
+
+8) hire_workers
+	1) client_id
+	2) worker_id
+	3) worker_action (seen/unseen)
+	4) client_action (accept/reject) (based on this user get number of completed_task)
+	5) created_at
+	6) updated_at
+	7) deleted_at
